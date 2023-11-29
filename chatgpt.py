@@ -28,7 +28,7 @@ def record_audio(duration, filename):
 def calc():
     # 사용 예시
     filename = "output.wav"  # 실제 파일 이름으로 변경해야 합니다.
-    text = pipe(filename)["text"]
+    res = pipe(filename)["text"]
     
     words = ["살려줘", "구해줘", "일일구 불러줘", "긴급 에스오에스", "도와줘", "긴급알림해줘"]
     flgs = 0
